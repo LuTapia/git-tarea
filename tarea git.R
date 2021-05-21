@@ -7,3 +7,6 @@ plot(x = cars$speed, y = cars$dist, xlab = "Speed")
 
 
 plot(cars, xlim = c(8, 8))
+
+plot(cars, xlim = c(10, 15))
+
