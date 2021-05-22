@@ -12,3 +12,7 @@ plot(cars, xlim = c(10, 15))
 
 #comentario prueba config
 #comentario 2 prueba
+
+
+remotes::install_github("rstudio/renv")
+renv::init()
