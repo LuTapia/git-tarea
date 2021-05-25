@@ -45,3 +45,5 @@ use_condaenv("myenv")
 use_condaenv(condaenv = "r-nlp", conda = "/opt/anaconda3/bin/conda") #version alternativa específica
 #info especifica de la versión de Python en uso
 py_config()
+
+#comentario esete

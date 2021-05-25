@@ -25,5 +25,13 @@ dataframe <- data.frame(A, B)
 print(dataframe)
 boxplot(B~A,data=dataframe)
 ```
-asds
-asdasd
+```{python}
+x= [1,9]
+x
+```
+```{r}
+py$x
+```
+
+
+
