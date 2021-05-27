@@ -6,32 +6,22 @@ output: html_document
 ---
 
 ```{r}
-norm <- rnorm(100, mean = 0, sd = 1)
+library(reticulate)
+library(devtools)
+library(tidyverse)
+use_python("/usr/local/bin/python")
 ```
 
-```{r, echo = FALSE}
-A <- c("a", "a", "b", "b")
-B <- c(5, 10, 15, 20)
-dataframe <- data.frame(A, B)
-print(dataframe)
-```
-
-#evitar que salga de margen el texto, va al principio del RMark
-```{r, fig.width = 4, fig.height = 3} 
-#evitar que salga de margen el texto, va al principio del RMark
-A <- c("a", "a", "b", "b")
-B <- c(5, 10, 15, 20) 
-dataframe <- data.frame(A, B)
-print(dataframe)
-boxplot(B~A,data=dataframe)
+```{r}
+data <- data.frame(mtcars)
+data
+data <- select(data, mpg, hp)
+data
 ```
 ```{python}
-x= [1,9]
-x
+print(r.data)
 ```
-```{r}
-py$x
-```
+
 
 
 
